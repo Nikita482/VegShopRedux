@@ -10,6 +10,9 @@ import {
 } from "../../store/slices/cardsSlice";
 import type { AppDispatch } from "../../store/store";
 
+import logoNoCard from "../../assets/cart_empty.png";
+import headerCard from "../../assets/Icon.png";
+
 const Header = () => {
   const [opened, setOpened] = useState(false);
 
@@ -43,7 +46,7 @@ const Header = () => {
                 <div className={styles.header__cartCount}>{cart.length}</div>
               )}
               <span className={styles.header__cart}>Cart</span>
-              <img src="public/Icon.png" alt="card" />
+              <img src={headerCard} alt="card" />
             </Button>
           </Popover.Target>
 
@@ -51,7 +54,7 @@ const Header = () => {
             <div className={styles.header__wrapper}>
               {cart.length === 0 ? (
                 <div className={styles.header__noCard}>
-                  <img src="public/cart_empty.png" alt="no card" />
+                  <img src={logoNoCard} alt="no card" />
                   <p>You cart is empty!</p>
                 </div>
               ) : (
