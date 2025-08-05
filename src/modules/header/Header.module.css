@@ -1,0 +1,131 @@
+.header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  height: 35px;
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 31px;
+  padding-left: 12px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header__logo span {
+  height: 35px;
+  border-radius: 31px;
+  background-color: rgba(84, 180, 106, 1);
+  padding: 0 10px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+}
+
+.header__cartCount {
+  width: 20px;
+  aspect-ratio: 1 / 1;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.header__cart {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__wrapper {
+  width: 400px;
+}
+
+.header__noCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header__noCard p {
+  margin-top: 20px;
+}
+
+.header__window {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 155%;
+}
+
+.header__window > div:last-child {
+  margin-left: auto;
+}
+
+.header__window img {
+  width: 64px;
+  aspect-ratio: 1 / 1;
+}
+
+.header__info {
+  margin: auto 0 auto 10px;
+}
+
+.header__panel {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper__btns {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 18px;
+  background-color: #eee;
+  color: rgba(33, 37, 41, 1);
+  font-family: monospace;
+}
+.wrapper__btns:hover {
+  background-color: #d4d4d4;
+  color: rgba(33, 37, 41, 1);
+}
+
+.header__total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
